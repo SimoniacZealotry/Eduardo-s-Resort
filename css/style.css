@@ -18,6 +18,18 @@ body{
   margin: auto;
 }
 
+.container1{
+  display: flex;
+  max-width: 90%;
+  margin: auto;
+  justify-content: center;
+}
+
+.container2{
+  max-width: 99%;
+  margin: auto;
+}
+
 li{
   list-style: none;
 }
@@ -46,7 +58,8 @@ a:hover{
 /*------------------------------------------------------------------Header-------------------------------------------------------------------*/
 .head{
   height: 10vh;
-  line-height: 10vh;
+  line-height: 12vh;
+  background: white;
 }
 
 .head i{
@@ -61,6 +74,7 @@ a:hover{
 
 .head img{
   margin-top: 24px;
+  height: 48px;
 }
 /*------------------------------------------------------------------Header-------------------------------------------------------------------*/
 header{
@@ -116,6 +130,10 @@ header .head_contact{
   position: relative;
 }
 
+.sticky .container1 .head_contact i{
+  display: none;
+}
+
 header .head_contact i{
   position: absolute;
   top: -40px;
@@ -136,7 +154,7 @@ header.sticky{
   z-index: 999;
   position: fixed;
   width: 100%;
-  height: 7vh;
+  height: 10vh;
   background: #234294ff;
   transition: 0.5s;
   top: 0;
@@ -154,8 +172,25 @@ header .sticky ul li a{
     align-items: center;
   }
 
-  .header .head_contact,
+  .address{
+    display: none;
+  }
+
+  .social{
+    display: none;
+  }
+
   .logo{
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo img{
+    margin-top: 10px;
+    height: 48px;
+  }
+
+  .header .head_contact{
     display: none;
   }
 
@@ -168,8 +203,19 @@ header .sticky ul li a{
     padding: 0 0 0 0;
   }
 
+  .header .container1{
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: right;
+  }
+
   .header.sticky{
     height: 13vh;
+  }
+
+  .sticky .container1{
+    margin: 0 0 0 25px;
   }
 
   .header.sticky .nav-menu{
@@ -208,6 +254,7 @@ header .sticky ul li a{
     width: 40%;
     right: 0;
     bottom: 0;
+    top: 125px;
     border-radius: 0 0 0 50%;
     transition: 0.5s;
   }
@@ -241,7 +288,7 @@ header .sticky ul li a{
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 102.1%;
+  height: 100%;
   filter: brightness(60%)
 }
 
@@ -319,7 +366,7 @@ button:hover{
 /* Booking Reservation Button */
 .home .image_item {
   position: absolute;
-  top: 20%;
+  top: 25%;
   right: 20%;
   display: flex;
   flex-direction: column;
@@ -406,7 +453,7 @@ input {
 }
 
 .about {
-  margin-bottom: 50px;
+  margin: 35vh 0 0 0;
 }
 
 .about .img {
@@ -498,6 +545,7 @@ input {
   
   .about {
     margin-bottom: 50px;
+    margin-top: 17vh;
   }
   
   .about .img {
@@ -681,7 +729,7 @@ input {
 }
 
 .room img {
-  width: 30vw;
+  width: 100%;
   height: 35vh;
 }
 
