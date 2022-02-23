@@ -273,12 +273,21 @@ input {
 }
 
 button {
-  background: #E54E25ff;
+  background: linear-gradient(to right, #F17F23ff, #E54E25ff);
+  text-transform: uppercase;
   color: white;
   padding: 10px 20px;
   outline: none;
   border: none;
-  border-radius: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover{
+	background-position: right;
+	background: #E54E25ff;
+  transform: scale(1.1);
 }
 
 button i {
@@ -287,7 +296,10 @@ button i {
 }
 
 button span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   margin-top: 5px;
+  font-size: 1em;
 }
 
 /*------------home------------*/

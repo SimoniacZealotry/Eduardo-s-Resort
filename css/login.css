@@ -175,10 +175,11 @@ a:hover{
 	text-transform: uppercase;
 	margin: 1rem 0;
 	cursor: pointer;
-	transition: .5s;
+	transition: all 0.3s ease;
 }
 .btn:hover{
 	background-position: right;
+	background-image: #234294ff;
 }
 
 

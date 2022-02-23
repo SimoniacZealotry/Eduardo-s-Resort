@@ -27,7 +27,7 @@
     </div>
 
     <div class="logo">
-      <img src="image/ER-whitelogo.png">
+      <img src="image/ER-whitelogo(cropped).png">
     </div>
 
     <div class="address">
@@ -39,16 +39,16 @@
 
 <!--Header-->
 <header class="header">
-  <div class="container">
+  <div class="container1">
     <nav class="navbar flex1">
 
       <ul class="nav-menu">
         <li> <a href="#home">Home</a></li>
-        <li> <a href="reservation.html">Reservation</a></li>
         <li> <a href="#accomodations">Accomodations</a></li>
         <li> <a href="#rates">Rates and Promos</a></li>
         <li> <a href="#event">Event Packages</a></li>
         <li> <a href="rooms.html">Room Bookings</a></li>
+        <li> <a href="reservation.html">Reservation</a></li>
         <li> <a href="login.html">Admin Login</a></li>
       </ul>
 
@@ -173,40 +173,24 @@
   <div class="container">
     <div class="text">
       <h2>Our Amenities</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <p>Anong pwedeng sabihin dito awit? </p>
 
       <div class="content">
         <div class="box flex">
           <i class="fas fa-swimming-pool"></i>
-          <span>Swimming Pool</span>
-        </div>
-        <div class="box flex">
-          <i class="fas fa-dumbbell"></i>
-          <span>Gym & Yoga</span>
-        </div>
-        <div class="box flex">
-          <i class="fas fa-spa"></i>
-          <span>Spa & Massage</span>
-        </div>
-        <div class="box flex">
-          <i class="fas fa-ship"></i>
-          <span>Boat Tours</span>
+          <span>Olympic-Sized Swimming Pool</span>
         </div>
         <div class="box flex">
           <i class="fas fa-swimmer"></i>
-          <span>Surfing Lessons</span>
+          <span>Kiddie Pools</span>
+        </div>
+        <div class="box flex">
+          <i class="fas fa-spa"></i>
+          <span>Bar & Restaurant</span>
         </div>
         <div class="box flex">
           <i class="fas fa-microphone"></i>
-          <span>Conference Room</span>
-        </div>
-        <div class="box flex">
-          <i class="fas fa-water"></i>
-          <span>Diving & Smorking</span>
-        </div>
-        <div class="box flex">
-          <i class="fas fa-umbrella-beach"></i>
-          <span>Private Beach</span>
+          <span>Events Center</span>
         </div>
       </div>
     </div>
@@ -216,14 +200,14 @@
 <!--Featured Rooms-->
 
 <section class="room top" id="room">
-  <div class="container">
+  <div class="container2">
     <div class="heading_top flex1">
       <div class="heading">
         <h5><div class="text-2"><span class="animate-2"></span></div></h5>
         <h2>Featured Rooms and Suites</h2>
       </div>
       <div class="button">
-        <button class="btn1">VIEW ALL</button>
+        <button class="btn1">BOOK NOW</button>
       </div>
     </div>
 
@@ -233,8 +217,8 @@
           <img src="image/r1.png" alt="">
         </div>
         <div class="text">
-          <h3>Superior Soble Rooms</h3>
-          <p> <span>$</span>129 <span>/per night</span> </p>
+          <h3>Family Rooms</h3>
+          <p> <span>Php </span>3,500.00 <span>/per night</span> </p>
         </div>
       </div>
       <div class="box">
@@ -242,8 +226,8 @@
           <img src="image/r2.png" alt="">
         </div>
         <div class="text">
-          <h3>Superior Soble Rooms</h3>
-          <p> <span>$</span>129 <span>/per night</span> </p>
+          <h3>Deluxe Rooms</h3>
+          <p> <span>Php </span>2,500.00 <span>/per night</span> </p>
         </div>
       </div>
       <div class="box">
@@ -251,8 +235,8 @@
           <img src="image/r3.png" alt="">
         </div>
         <div class="text">
-          <h3>Superior Soble Rooms</h3>
-          <p> <span>$</span>129 <span>/per night</span> </p>
+          <h3>Single Deluxe Rooms</h3>
+          <p> <span>Php </span>2,000.00 <span>/per night</span> </p>
         </div>
       </div>
     </div>
@@ -484,7 +468,34 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<!--Typing Animation-->
+<script>
+  !function(a){"use strict";a.fn.typer=function(b){function c(a,b){k<b.length?(g=b[k].split(""),h=g.length,setTimeout(function(){a.append(g[j]),j++,j<h?c(a,b):(j=0,k++,setTimeout(function(){e(a,function(){c(a,b)})},i.backspaceDelay))},i.typeSpeed)):i.repeat&&d(a,b)}function d(a,b){k=0,setTimeout(function(){c(a,b)},i.repeatDelay)}function e(a,b){setTimeout(function(){a.text(a.text().slice(0,-1)),0<a.text().length?e(a,b):"function"==typeof b&&b()},i.backspaceSpeed)}function f(a){setInterval(function(){a.fadeOut(400).fadeIn(400)},900)}var g,h,i=a.extend({typeSpeed:60,backspaceSpeed:20,backspaceDelay:800,repeatDelay:1e3,repeat:!0,autoStart:!0,startDelay:100,useCursor:!0,strings:["Typer.js plugin"]},b),j=0,k=0;return this.each(function(){var b,d,e=a(this);i.autoStart&&(e.append('<span class="typed"></span>'),i.useCursor&&(e.append('<span class="typed_cursor">&#x7c;</span>'),d=e.children(".typed_cursor"),f(d)),b=e.children(".typed"),setTimeout(function(){c(b,i.strings)},i.startDelay))})}}(jQuery);
+
+  $(document).ready(function(){
+      //Typing Animation
+      var typed = new Typed('.animate-1', {
+          strings: ["CAPTIVATING VIEWS", "BREATHTAKING SUNSETS", "PERFECT VACATIONS"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+      });
+
+      var typed = new Typed('.animate-2', {
+          strings: ["A HAVEN OF LUXURY", "COMFORT", "THAT EVERYONE DESERVES"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+      });
+
+      var typed = new Typed('.animate-3', {
+      strings: ["LET THE JOURNEY BEGIN", "A WORLD OF ADVENTURES", "RELAXATION", "MEMORIES AWAIT!"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+      });
+  });
+</script>
 
 </body>
 </html>
