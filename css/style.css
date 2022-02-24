@@ -60,7 +60,7 @@ a:hover{
 .head{
   height: 10vh;
   line-height: 12vh;
-  background: #0275BCff;
+  background: rgba(2, 117, 188, 0.5);
 }
 
 .head i{
@@ -74,12 +74,11 @@ a:hover{
 }
 
 .head img{
-  margin-top: 24px;
-  height: 48px;
+  height: 100px;
 }
 /*------------------------------------------------------------------Header-------------------------------------------------------------------*/
 header{
-  background: #0275BCff;
+  background: rgba(2, 117, 188, 0.5);
   padding: 15px 0 15px 0;
   color: white;
 }
