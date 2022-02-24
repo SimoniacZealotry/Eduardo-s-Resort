@@ -46,6 +46,7 @@ a:hover{
 
 .flex{
   display: flex;
+  align-items: center;
 }
 
 .flex1{
@@ -59,7 +60,7 @@ a:hover{
 .head{
   height: 10vh;
   line-height: 12vh;
-  background: white;
+  background: #0275BCff;
 }
 
 .head i{
@@ -638,7 +639,9 @@ input {
 .wrapper .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 30px;
+  grid-row-gap: 10vh;
+  grid-column-gap: 2vh;
+  font-size: 30px;
 }
 
 .wrapper h2 {
@@ -652,14 +655,14 @@ input {
   margin: 20px;
   line-height: 30px;
   font-size: 17px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   /*margin: 0 0 20px 50px;*/
 }
 
 .wrapper span {
-  margin: 20px;
+  align-items: center;
   font-size: 16px;
-  margin: 0 0 20px 50px;
+  margin-left: 45px;
 }
 
 .wrapper i {
