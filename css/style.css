@@ -115,6 +115,8 @@ header li{
 }
 
 header ul li a{
+  position: relative;
+  text-decoration: none;
   font-size: 15px;
   color: white;
   text-transform: uppercase;
@@ -122,8 +124,19 @@ header ul li a{
   font-weight: 500;
 }
 
-header ul li a:hover{
-  color: #222;
+header ul li a:after{
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover:after{
+  width: 100%;
 }
 
 header .head_contact{
@@ -146,7 +159,6 @@ header .head_contact i{
   color: #0275BCff;
   border-radius: 50%;
   transform: rotate(-45deg);
-  border: 5px solid #0275BCff;
   font-size: 30px;
 }
 
@@ -186,8 +198,7 @@ header .sticky ul li a{
   }
 
   .logo img{
-    margin-top: 10px;
-    height: 48px;
+    height: 100px;
   }
 
   .header .head_contact{
@@ -195,7 +206,7 @@ header .sticky ul li a{
   }
 
   .head{
-    background: white;
+    background: rgba(2, 117, 188, 0.5);
   }
 
   /*------Header-------*/
@@ -234,7 +245,7 @@ header .sticky ul li a{
     top: 8rem;
     bottom: 0;
     flex-direction: column;
-    background: #0275BCff;
+    background: rgba(2, 117, 188, 0.5);
     width: 100%;
     text-align: center;
     transition: 0.5s;
@@ -254,7 +265,7 @@ header .sticky ul li a{
     width: 40%;
     right: 0;
     bottom: 0;
-    top: 125px;
+    top: 127px;
     border-radius: 0 0 0 50%;
     transition: 0.5s;
   }
